@@ -11,8 +11,7 @@
 // GO AFTER THE REQUIRES BELOW.
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.datepicker
-//= require bootstrap
+//= require jquery.ui.datepicker 
 //= require moment 
 //= require bootstrap-timepicker
 //= require bootstrap-datetimepicker
