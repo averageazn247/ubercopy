@@ -1,6 +1,6 @@
 Ubercopy::Application.routes.draw do
   devise_for :admins
-
+  resources :users
    resources :drivers
    resources :pickups
   get "static_pages/home"
