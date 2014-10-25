@@ -38,10 +38,10 @@ end
 group :development, :test do
   gem 'sqlite3', '1.3.5'
 end
-gem 'pg'
+
 group :production do
   #gem 'pg', '0.15.1'
-
+gem 'pg'
   gem 'rails_12factor'
 end
 # To use ActiveModel has_secure_password
