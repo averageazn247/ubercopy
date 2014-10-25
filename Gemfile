@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-
+ruby '1.9.3'
 gem 'rails', '3.2.8' 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'momentjs-rails', '>= 2.8.1'
 gem 'bootstrap3-datetimepicker-rails', '~> 3.1.3'
-
+#gem 'ibm_db'
 gem 'bootstrap-timepicker-rails-addon'
 gem 'jquery-rails', "~> 2.3.0"
 gem 'omniauth-twitter'
@@ -37,6 +37,12 @@ group :assets do
 end
 group :development, :test do
   gem 'sqlite3', '1.3.5'
+end
+gem 'pg'
+group :production do
+  #gem 'pg', '0.15.1'
+
+  gem 'rails_12factor'
 end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
