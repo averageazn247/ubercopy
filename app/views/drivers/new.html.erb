@@ -1,0 +1,34 @@
+<div class="hero-unit">
+ 		<script type="text/javascript">
+			$(function () {
+				$('#datetimepicker5').datetimepicker({
+					pickTime: false
+				});
+			});
+			$('.timepicker').timepicker()
+		</script>
+<h2>Driver night Sign up</h2>
+
+<%= form_for(@driver) do |f| %>
+<div>
+	<%= f.label :bar, "location"%><br />
+	  <%= f.text_field :bar %></div>
+ 
+
+<div>
+	Date <br />  
+	<%= f.text_field :day %>
+	 </div>
+	 <br />
+	 Starting Time <%= f.time_select :start%>
+	 <br />
+	  Ending Time <%= f.time_select :end_time%>
+ <%= f.hidden_field :userid, :value => current_user.id %>
+ <br />
+ <br />
+  <div><%= f.submit "Sign up" , class:'btn'%></div>
+<% end %>
+ 
+</div>
+
+</div>

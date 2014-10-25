@@ -1,0 +1,13 @@
+<div class="hero-unit">
+	<h4>User: <%= @user.name %></h4>
+	
+	<br />
+	email: <%= @user.email %>
+	<br />
+	number: <%= @user.number%>
+	<br />
+	Is driver? <% if @user.driver== true %> Yes 
+<% else %>
+No
+<% end %>
+	</div>
